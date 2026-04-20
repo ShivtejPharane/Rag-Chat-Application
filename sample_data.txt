@@ -1,0 +1,94 @@
+Artificial Intelligence (AI) — Overview
+========================================
+
+Artificial Intelligence (AI) refers to the simulation of human intelligence in
+machines that are programmed to think and learn. The field was founded as an
+academic discipline in 1956 and has experienced several waves of optimism,
+followed by periods known as "AI winters."
+
+Types of AI
+------------
+1. **Narrow AI (Weak AI)** — Systems designed for a specific task, such as voice
+   assistants (Siri, Alexa), recommendation engines (Netflix, Spotify), and
+   image recognition systems.
+
+2. **General AI (Strong AI)** — A hypothetical system with the ability to
+   understand, learn, and apply intelligence across any domain, similar to a
+   human being. This has not yet been achieved.
+
+3. **Superintelligent AI** — An AI that surpasses human intelligence in
+   virtually every domain. This remains a theoretical concept discussed in
+   futurism and philosophy.
+
+Machine Learning
+-----------------
+Machine Learning (ML) is a subset of AI that enables systems to learn from data
+without being explicitly programmed. Key approaches include:
+
+- **Supervised Learning**: The model is trained on labelled data (e.g., spam
+  detection).
+- **Unsupervised Learning**: The model identifies hidden patterns in unlabelled
+  data (e.g., customer segmentation).
+- **Reinforcement Learning**: The model learns by receiving rewards or penalties
+  for its actions (e.g., game-playing agents like AlphaGo).
+
+Deep Learning
+--------------
+Deep Learning is a specialised form of ML that uses artificial neural networks
+with many layers ("deep" networks). Notable architectures:
+
+- **CNNs (Convolutional Neural Networks)** — Used for image and video analysis.
+- **RNNs (Recurrent Neural Networks)** — Used for sequential data like text and
+  time series.
+- **Transformers** — The architecture behind GPT, BERT, and other large language
+  models. Transformers use self-attention mechanisms to process input data in
+  parallel, making them far more efficient than RNNs for many tasks.
+
+Large Language Models (LLMs)
+-----------------------------
+LLMs such as GPT-4, LLaMA, and Gemini are trained on massive text corpora and
+can generate human-like text. Key concepts:
+
+- **Tokens**: The smallest units of text an LLM processes.
+- **Context Window**: The maximum number of tokens an LLM can consider at once.
+- **Fine-tuning**: Adapting a pre-trained model to a specific domain or task.
+- **RLHF (Reinforcement Learning from Human Feedback)**: A technique used to
+  align LLM outputs with human preferences.
+
+RAG (Retrieval-Augmented Generation)
+--------------------------------------
+RAG is a technique that enhances LLM responses by retrieving relevant documents
+from an external knowledge base before generating an answer. The typical RAG
+pipeline consists of:
+
+1. **Document Ingestion** — Loading and splitting documents into chunks.
+2. **Embedding** — Converting text chunks into vector representations.
+3. **Storage** — Storing embeddings in a vector database (e.g., ChromaDB, FAISS,
+   Pinecone).
+4. **Retrieval** — Finding the most relevant chunks for a given query using
+   similarity search.
+5. **Generation** — Feeding the retrieved context to an LLM to produce a
+   grounded answer.
+
+Benefits of RAG:
+- Reduces hallucinations by grounding responses in real documents.
+- Allows LLMs to access up-to-date or domain-specific information.
+- More cost-effective than fine-tuning for many use cases.
+
+Applications of AI
+--------------------
+- **Healthcare**: Disease diagnosis, drug discovery, medical imaging.
+- **Finance**: Fraud detection, algorithmic trading, credit scoring.
+- **Education**: Personalised tutoring, automated grading.
+- **Transportation**: Self-driving cars, route optimisation.
+- **Creative Arts**: Image generation (DALL·E, Midjourney), music composition.
+
+Ethical Considerations
+-----------------------
+- **Bias**: AI systems can inherit and amplify biases present in training data.
+- **Privacy**: Large-scale data collection raises significant privacy concerns.
+- **Job Displacement**: Automation may displace certain types of work.
+- **Safety**: Ensuring AI systems behave as intended, especially in high-stakes
+  domains.
+- **Transparency**: The "black box" nature of deep learning models makes
+  interpretability a key challenge.
